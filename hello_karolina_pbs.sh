@@ -17,4 +17,4 @@ module list
 export OMPI_MCA_mpi_warn_on_fork=0
 export RDMAV_FORK_SAFE=1
 
-time mpirun -np 8 --map-by ppr:4:node Rscript hello_balance.R
+time mpirun -np 32 --map-by ppr:4:node Rscript hello_balance.R
